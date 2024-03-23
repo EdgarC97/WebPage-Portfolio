@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap'); /* importamos fuente de Google Fonts */
+
+/* Estilos base para todos los elementos de la pag */
+*{
+        box-sizing: border-box; /* Todos los elementos usan el modelo de caja de borde */
+        margin: 0; /* Margen de 0 para todos los elementos */
+        padding: 0; /* Relleno de 0 para todos los elementos */
+        font-family: 'Nunito', sans-serif; /* Fuente para todos los elementos */
+        font-size: 16px; /* Tamaño de fuente base  */
+        color: white; /* Color de texto base*/
+}
+
+/* Establece estilos para el cuerpo del documento */
+body{
+        background-image: URL(/CSS/img/OIG1\ \(2\).jpeg); /* Imagen de fondo para el cuerpo del documento */
+ }
+
+/* Establece estilos para el encabezado */
+header{
+        background-color: #004d71; 
+        display: flex; /*  flexbox para el diseño del encabezado */
+        align-items: center; /* Centra los elementos  verticalmente */
+        height: 85px; 
+        padding: 5px 10%; /* Relleno alrededor del encabezado */
+        position: fixed; /* Posición fija para que el encabezado se mantenga en la parte superior de la pantalla */
+        width: 100%; /* Ancho completo para el encabezado */
+        top: 0; /* Posiciona el encabezado en la parte superior de la pantalla */
+        z-index: 100; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+/* Estilos para la sección que sigue al encabezado */
+section {
+        margin-top: 85px; /* Agrega un margen superior igual a la altura del encabezado para evitar que el contenido se superponga con el encabezado */
+}
+
+/* Estilos para el logo dentro del encabezado */
+header .logo  {
+        cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el logo */
+ }
+
+/* Estilos para la imagen del logo */
+header .logo img {
+        height: 70px; /* Altura de la imagen del logo */
+        width: auto; /* Ancho automático para mantener las proporciones de la imagen */
+        border-radius: 50%; /* Borde redondeado para hacer que la imagen sea circular */
+        transition: all 0.3s; /* Transición suave para los cambios de estilo del logo */
+}
+
+/* Estilos para el logo cuando se pasa el cursor sobre él */
+header .logo img:hover{
+        transform: scale(1.1); /* Aumenta el tamaño del logo cuando se pasa el cursor sobre él */
+ }
+
+/* Estilos para los enlaces de navegación */
+header .nav-links{
+        list-style: none; /* Elimina los marcadores de lista para los enlaces de navegación */
+        margin-left: 20px; /* Agrega un margen a la izquierda de los enlaces de navegación */
+}
+
+/* Estilos para cada elemento de la lista de enlaces de navegación */
+header .nav-links li{
+        display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+        padding: 0 8px; /* Relleno alrededor del botón - 0px arriba y abajo , 8 px a los lados */
+        font-weight: 700; /* Hace que el texto de los enlaces de navegación sea negrita */
+}
+
+/* Estilos para los enlaces de navegación */
+header .nav-links a{ 
+        font-size: 16px;
+        color: white; 
+        text-decoration: none; /* Elimina la decoración de los enlaces de navegación */
+}
+
+/* Estilos para los enlaces de navegación cuando se pasa el cursor sobre ellos */
+header .nav-links li a:hover{
+        text-decoration: underline; /* Subraya los enlaces de navegación cuando se pasa el cursor sobre ellos */
+}
+
+/* Estilos para el botón dentro del encabezado */
+header .btn {
+        margin-left: auto; /* Empuja el botón hacia la derecha del encabezado */
+}
+
+/* Establece estilos para el botón */
+header .btn button{
+        font-weight: 700; 
+        font-size: 16px; 
+        color: white; 
+        padding: 9px 25px; /* Relleno alrededor del botón - 9px arriba y abajo , 25 px a los lados */
+        background: #410099; 
+        border: none; /* Elimina el borde del botón */
+        border-radius: 50px; 
+        cursor: pointer; 
+        transition: all 0.3s; 
+}
+
+/* Estilos para el botón cuando se pasa el cursor sobre él */
+header .btn button:hover{
+        background-color:#410099 ; 
+        color :white; 
+        transform: scale(1.1) ;
+}
+
+/* Estilos para el botón flotante dentro del contenedor */
+.container .btn-float .btn{
+        color:yellow; 
+        text-decoration: none; /* Elimina la decoración del botón flotante */
+        font-size: 1.5rem; 
+        font-weight: bold;
+        background-color: gray;
+        padding: 5px 15px; /* Relleno alrededor del botón flotante - 5px arriba y abajo y 25px a lo lados*/
+        border-radius: 50%; 
+        position: fixed; /* Posición fija para que el botón flotante se mantenga en la misma posición en la pantalla */
+        right: 40px; /* Posiciona el botón flotante a 40px desde la derecha de la pantalla */
+        bottom: 40px; /* Posiciona el botón flotante a 40px desde la parte inferior de la pantalla */
+        transition: all 0.3s ease 0s ; 
+        box-shadow: 0px 8px 15px rgba(255, 255, 255,0.2); /* Sombra para el botón flotante */
+        z-index: 99; /* Asegura que el botón flotante esté por encima de otros elementos */
+} 
+
+/* Estilos para el botón flotante cuando se pasa el cursor sobre él */
+.container .btn-float .btn:hover{
+        color: black; 
+        box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.1); 
+        transform: translateY(-3px); /* Mueve el botón flotante hacia arriba cuando se pasa el cursor sobre él */
+}
