@@ -82,7 +82,7 @@ header .btn {
         margin-left: auto; /* Empuja el botón hacia la derecha del encabezado */
 }
 
-/* Establece estilos para el botón */
+/*Establece estilos para el botón */
 header .btn button{
         font-weight: 700; 
         font-size: 16px; 
@@ -103,7 +103,7 @@ header .btn button:hover{
 }
 
 /* Estilos para el botón flotante dentro del contenedor */
-.container .btn-float .btn{
+.container-boton .btn-float .btn{
         color:yellow; 
         text-decoration: none; /* Elimina la decoración del botón flotante */
         font-size: 1.5rem; 
@@ -120,8 +120,14 @@ header .btn button:hover{
 } 
 
 /* Estilos para el botón flotante cuando se pasa el cursor sobre él */
-.container .btn-float .btn:hover{
+.container-boton .btn-float .btn:hover{
         color: black; 
         box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.1); 
         transform: translateY(-3px); /* Mueve el botón flotante hacia arriba cuando se pasa el cursor sobre él */
+}
+
+.Social-networks{
+        background-color: black;
+        height: fit-content;
+
 }
