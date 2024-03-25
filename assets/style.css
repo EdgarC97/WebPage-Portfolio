@@ -1,6 +1,132 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap'); /* importamos fuente de Google Fonts */
 
+:root {
+        /* Fonts */
+        --paragraphFont: "Nunito", sans-serif;
+        --titleFont: "Nunito", sans-serif;
+      
+        /* Colors */
+        --mainColor: #004d71;
+        --secondColor: #410099;
+        --smoothColor: #c5be8b;
+        --whiteColor: #ffffff;
+        --blackColor: #000000;
+        --brownColor: #3f261c;
+      
+        /* utilities */
+        --cardBoxShadow: 2px 1px 4px 3px rgba(0, 0, 0, 25%);
+        --normalSpacing: 50px;
+      }
+
+      /*Globals*/
+      
+      html {
+        box-sizing: border-box; /* so border, padding and margin don't affect original width*/
+        /* font-size: 62.5%; 1rem = 10px */
+      }
+      
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit; /*inherits from html*/
+      
+      }
+      
+      body {
+        font-family: var(--paragraphFont);
+        font-size: 100%;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--titleFont);
+      }
+      
+      h1 {
+        font-size: 36px;
+      }
+      
+      h2 {
+        font-size: 27px;
+      }
+      
+      h3 {
+        font-size: 21px;
+      }
+      
+      img {
+        max-width: 100%;
+      }
+      
+      /* Utilities */
+      
+      .container {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+      }
+      
+      .m-0 {
+        margin: 0;
+      }
+      
+      .mt-20 {
+        margin-top: 20px;
+      }
+      
+      .ml-1 {
+        margin-left: 3px;
+      }
+      
+      .ml-2 {
+        margin-left: 6px;
+      }
+      
+      .p-0 {
+        padding: 0;
+      }
+      
+      .text-center {
+        text-align: center;
+      }
+      
+      .text-bold {
+        font-weight: 700;
+      }
+      
+      .d-flex {
+        display: flex;
+      }
+      
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      
+      .gap-1 {
+        gap: 1px;
+      }
+      
+      .gap-10 {
+        gap: 10px;
+      }
+      
+      .position-fixed {
+        position: fixed;
+      }
+
+
 /* Estilos base para todos los elementos de la pag */
 *{
         box-sizing: border-box; /* Todos los elementos usan el modelo de caja de borde */
@@ -12,103 +138,148 @@
 
 /* Establece estilos para el cuerpo del documento */
 body{
-        background-image: URL(/CSS/img/OIG1\ \(2\).jpeg); /* Imagen de fondo para el cuerpo del documento */
+        
+  font-family: var(--paragraphFont);
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+               
  }
 
-/* Establece estilos para el encabezado */
+/* Header-styles */
 header{
         background-color: #004d71; 
         display: flex; /*  flexbox para el diseño del encabezado */
+        justify-content: space-between;
         align-items: center; /* Centra los elementos  verticalmente */
         height: 85px; 
         padding: 5px 10%; /* Relleno alrededor del encabezado */
-        position: fixed; /* Posición fija para que el encabezado se mantenga en la parte superior de la pantalla */
         width: 100%; /* Ancho completo para el encabezado */
         top: 0; /* Posiciona el encabezado en la parte superior de la pantalla */
         z-index: 100; /* Asegura que el encabezado esté por encima de otros elementos */
-}
 
-/* Estilos para la sección que sigue al encabezado */
-section {
-        margin-top: 85px; /* Agrega un margen superior igual a la altura del encabezado para evitar que el contenido se superponga con el encabezado */
-}
-
-/* Estilos para el logo dentro del encabezado */
-header .logo  {
-        cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el logo */
- }
-
-/* Estilos para la imagen del logo */
-header .logo img {
+        /* Logo styles */
+        .logo{/* Cambia el cursor a un puntero cuando se pasa sobre el logo */
+        cursor:pointer ;
+        order: -1;
+        }
+        
+        /* Logo image style*/
+        .logo img{
         height: 70px; /* Altura de la imagen del logo */
         width: auto; /* Ancho automático para mantener las proporciones de la imagen */
         border-radius: 50%; /* Borde redondeado para hacer que la imagen sea circular */
         transition: all 0.3s; /* Transición suave para los cambios de estilo del logo */
-}
+                
+        }
 
-/* Estilos para el logo cuando se pasa el cursor sobre él */
-header .logo img:hover{
+        .logo img:hover{
         transform: scale(1.1); /* Aumenta el tamaño del logo cuando se pasa el cursor sobre él */
- }
+         }
+         
+        .title{
+        color: var(--whiteColor);
+         }
 
-/* Estilos para los enlaces de navegación */
-header .nav-links{
+         /* Nav link styles */
+        .nav-links{
         list-style: none; /* Elimina los marcadores de lista para los enlaces de navegación */
         margin-left: 20px; /* Agrega un margen a la izquierda de los enlaces de navegación */
-}
+        }
 
-/* Estilos para cada elemento de la lista de enlaces de navegación */
-header .nav-links li{
-        display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
-        padding: 0 8px; /* Relleno alrededor del botón - 0px arriba y abajo , 8 px a los lados */
-        font-weight: 700; /* Hace que el texto de los enlaces de navegación sea negrita */
-}
+        .nav-links li{
+                display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+                padding: 0 8px; /* Relleno alrededor del botón - 0px arriba y abajo , 8 px a los lados */
+                font-weight: 700; /* Hace que el texto de los enlaces de navegación sea negrita */
+        }
 
-/* Estilos para los enlaces de navegación */
-header .nav-links a{ 
-        font-size: 16px;
-        color: white; 
+        .nav-links a{ 
+        color: var(--whiteColor); 
         text-decoration: none; /* Elimina la decoración de los enlaces de navegación */
-}
+        }
 
-/* Estilos para los enlaces de navegación cuando se pasa el cursor sobre ellos */
-header .nav-links li a:hover{
-        text-decoration: underline; /* Subraya los enlaces de navegación cuando se pasa el cursor sobre ellos */
-}
+        .nav-links li a:hover{
+                text-decoration: underline; /* Subraya los enlaces de navegación cuando se pasa el cursor sobre ellos */
+        }
 
-/* Estilos para el botón dentro del encabezado */
-header .btn {
-        margin-left: auto; /* Empuja el botón hacia la derecha del encabezado */
-}
-
-/*Establece estilos para el botón */
-header .btn button{
+        /*Contact button styles */
+        .contact-btn{
         font-weight: 700; 
-        font-size: 16px; 
         color: white; 
-        padding: 9px 25px; /* Relleno alrededor del botón - 9px arriba y abajo , 25 px a los lados */
+        padding: 15px 25px; /* Relleno alrededor del botón - 9px arriba y abajo , 25 px a los lados */
         background: #410099; 
         border: none; /* Elimina el borde del botón */
         border-radius: 50px; 
         cursor: pointer; 
         transition: all 0.3s; 
-}
-
-/* Estilos para el botón cuando se pasa el cursor sobre él */
-header .btn button:hover{
+        text-decoration: none;
+        }
+        
+        .contact-btn:hover{
         background-color:#410099 ; 
         color :white; 
         transform: scale(1.1) ;
+        }   
 }
 
+/*  Section Introduction -styles */
+
+.container-introduction{
+        background-color: #c5be8b;
+        padding-top: 15px;
+        min-height: 85vh;
+        max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:repeat(2, 250px);
+	gap: 10px;
+        
+}
+
+.main-description{
+        width: auto;
+        max-width: auto;
+        border-radius: 10px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        }
+
+.qualification-table {
+        width: auto;
+        max-width: auto;
+        border-radius: 10px;
+        grid-column: 2 /3;
+        grid-row: 1/2;
+}
+
+.qualification-table table {
+        border: 1px solid black; 
+}
+
+.unkown-picture{
+        width: 100%;
+	height: 100%;
+	object-fit: cover;
+        border-radius: 10px;
+        box-shadow: var(--cardBoxShadow);
+        grid-column: 2/3;
+        grid-row: 2/3; 
+
+}
+
+/* Section blog content -styles */
+
 /* Estilos para el botón flotante dentro del contenedor */
-.container-boton .btn-float .btn{
-        color:yellow; 
+.btn-float a {
+        color:var(--secondColor); 
         text-decoration: none; /* Elimina la decoración del botón flotante */
         font-size: 1.5rem; 
         font-weight: bold;
-        background-color: gray;
-        padding: 5px 15px; /* Relleno alrededor del botón flotante - 5px arriba y abajo y 25px a lo lados*/
+        background-color: var(--smoothColor);
+        padding: 15px 20px; /* Relleno alrededor del botón flotante - 5px arriba y abajo y 25px a lo lados*/
         border-radius: 50%; 
         position: fixed; /* Posición fija para que el botón flotante se mantenga en la misma posición en la pantalla */
         right: 40px; /* Posiciona el botón flotante a 40px desde la derecha de la pantalla */
@@ -119,14 +290,58 @@ header .btn button:hover{
 } 
 
 /* Estilos para el botón flotante cuando se pasa el cursor sobre él */
-.container-boton .btn-float .btn:hover{
-        color: black; 
+.btn-float a:hover{
+        color: var(--mainColor); 
         box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.1); 
         transform: translateY(-3px); /* Mueve el botón flotante hacia arriba cuando se pasa el cursor sobre él */
 }
 
-.Social-networks{
-        background-color: black;
-        height: fit-content;
+.footer{
+        background-color: var(--mainColor);
+        padding: 40px 0;
+}
 
+.footer-row{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.footer-links{
+        width: 50%;
+        padding: 0 15px;
+}
+    
+.footer-links h4{
+        font-size: 20px;
+        color: var(--whiteColor);
+        margin-bottom: 10px;
+        font-weight: 600;
+        border-bottom: 2px var(--smoothColor);
+        padding-bottom: 10px;
+        display: inline-block;
+
+}
+
+.social-link a {
+        display: inline-block;
+        min-height: 40px;
+        width: 40px;
+        background-color:rgba(255, 255, 255, 20%);
+        margin: 0 10px 10px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: var(--whiteColor);
+        transition: all .5s ease;
+
+}
+
+.social-link a:hover {
+        background-color: var(--smoothColor);
+}
+
+.footer-links{
+        color: var(--whiteColor);
+        display: inline-block;
+        text-align: center;
 }
