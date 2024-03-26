@@ -296,20 +296,19 @@ tbody tr:hover{
   
     }
   
-    background-color: aqua;
     .hamburger{
-        position: absolute;
-        right: 20px;
-        z-index: 9999;
-        background-color: red;
-        display: block;
-        .hamburger-line{
-        width:20px;
-        height: 4px;
-        margin-bottom: 4px;
-        background-color: #c5be8b;
-  
-        }
+      position: absolute;
+      right: 20px;
+      z-index: 9999;
+      background: linear-gradient(#860beb,#705086);
+      display: block;
+      .hamburger-line{
+      width:20px;
+      height: 4px;
+      margin-bottom: 4px;
+      background-color: var(--smoothColor);
+
+      }
     }
   }
 }
