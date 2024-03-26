@@ -4,32 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech_News</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/news.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 
 </head>
 <body>
-  <main>
-  
-    <header> 
-        <!--  aqui va el titulo principal y el logo   -->
-        <div id = "main-title-news" class="main-title-news">
-          <h1>TechNews</h1>
-        </div>
-      
-        <div class ="logo">
-          <img src="/assets/images/home.jpeg" alt ="logo">
-        </div>
 
-        <nav> <!--  Navigation bar  -->   
-          <ul>
-                <li><a href="index.html">Portafolio</a></li>
-                <li><a href="blog.html">Blog de conocimiento</a></li>
-                <li><a href="news.html">Noticias tecnologicas</a></li>
-                <li><a href="about_us.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav> 
-    </header>
+<header>
+    <!--  Main title and logo   -->
+    <div  class="title">
+      <h1 >Tech news</h1>
+    </div>
+
+    <div id = "main-logo" class ="logo">
+      <a href="/index.html">
+      <img src="/assets/images/home.jpeg" alt ="logo">
+      </a>
+    </div> 
+       
+    <nav> <!--  Navigation bar  -->
+      <ul class = "nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/blog.html">Blog de conocimiento</a></li>
+            <li><a href="/html/news.html">Noticias tecnologicas</a></li>
+            <li><a href="/html/about_us.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+
+
+      <a href="/html/contact.html" class="contact-btn">Contacto</a>
+
+</header>
+
+<main>
 
     <section>
         <div  class="New-list-title"> <!--  News list title   -->
@@ -43,7 +51,7 @@
                 <li><a href = "#habilities"> Habilidades blandas para tener en cuenta este 2024.</a></li> 
                 <li><a href = "#Trend"> Tendencias tecnologicas para este 2024</a></li> 
                 <li><a href = "#Salary"> Salarios sector tecnologico en Colombia.</a></li>                  
-        </ol>
+        </ol> <br> <hr>  <br>
 
         <article id = "Riwi"><!--Primer articulo/noticia-->
             <h2>1. En 'Medallo' hay una nueva fábrica de genios informáticos</h2>
@@ -88,8 +96,8 @@
             <a href="https://www.elcolombiano.com/negocios/en-medallo-hay-una-nueva-fabrica-de-genios-informaticos-HF23268179">Link de la noticia
             </a>
             
-        </article>
-        <hr>
+        </article> 
+        <br> <hr>  <br>
 
         <article id = "Ciber"> <!--Segundo articulo/noticia-->
             <h2>2. Ciberseguridad en 2024: las claves para estar al día con las últimas tendencias</h2> 
@@ -114,7 +122,7 @@
               noticia</a>
             
         </article>
-        <hr>
+        <br> <hr>  <br>
 
         <article id = "IA"><!--Tercer articulo/noticia-->
           <h2>3. Las 3 etapas de la Inteligencia Artificial: en cuál estamos y por qué muchos piensan que la tercera puede ser fatal</h2> 
@@ -184,7 +192,7 @@
           </a>
 
         </article>
-        <hr>
+        <br> <hr>  <br>
 
         <article id = "habilities"><!--Cuarto articulo/noticia-->
           <h2>4. Habilidades blandas más demandadas por las empresas para 2024</h2> 
@@ -224,7 +232,7 @@
               noticia</a>
             
         </article>
-        <hr>
+        <br> <hr>  <br>
 
         <article id = "Trend"><!--Quinto articulo/noticia-->
           <h2>5. Tendencias tecnologicas : Más datos y cloud . Lo qué esperan de la tecnología en 2024 los expertos y directivos</h2> 
@@ -280,7 +288,7 @@
 
           <a href="https://www.businessinsider.es/grandes-tendencias-tecnologia-2024-expertos-directivos-1343324">Link de la noticia</a>
           </article>
-        <hr>
+          <br> <hr>  <br>
 
         <article id = "Salary"><!--Sexto articulo/noticia-->
           <h2>6. Entre 5 y 26 millones de pesos al mes: estos son los salarios de los perfiles tecnológicos clave para el 2024 en Colombia</h2> 
@@ -328,12 +336,12 @@
 
           <a href="https://www.xataka.com.co/empresas-y-economia/5-26-millones-pesos-al-mes-estos-salarios-perfiles-tecnologicos-clave-para-2024-colombia#:~:text=As%C3%AD%20mismo%2C%20los%20a%C3%B1os%20de%20experiencia%20y%20la,de%20datos%3A%20Entre%209.000.000%20y%2025.000.000%20de%20pesos">Link de la noticia</a>
           <hr>
-        </article>
+        </article><br> <hr>  <br>
 
         <aside>   <!-- float button and contac us button  -->      
               <div class = "container-boton"> 
                 <div class = "btn-float">
-                  <a href="#main-title-news" title="Volver arriba"> + </a>
+                  <a href="#main-logo" title="Volver arriba"> + </a>
                 </div>
               </div>
               <a href="contacto.html" class="btn">Contacto</a>
@@ -341,27 +349,50 @@
 
     </section>
 
-  </main>
+</main>
 
-  <footer>
-    <!-- Social networks section -->
-    <div class="Social-networks">
-
-    <h4>Redes sociales </h4> 
-  
-    <!-- Social networks section -->
-    <a href="https://www.facebook.com/Edgardemjdm/?locale=es_LA" title="Visita mi Facebook">Facebook</a>
-    <a href = "https://twitter.com/Edgar_Cardona21"title="Visita mi X"> X </a>
-    <a href = "https://www.instagram.com/edgar.cardona97/" title="Visita mi Instagram"> Instagram
-    </a>
+<footer class = "footer">
     
+    <div class="container">
+    
+    <div class="footer-row">
+
+     
     <!-- Copyright -->
-    <p>Todos los derechos reservados Edgar Cardona 
-    ©2024
-    </p>
+    <div class="footer-links">
+      <h4>Todos los derechos reservados Edgar Cardona ©2024</h4>
+    </div> 
+      
+    <div class="footer-links">
+        <h4>Siguenos</h4>
+        <div class="social-link">
+          <a href="https://www.facebook.com/Edgardemjdm/?locale=es_LA" title="Visita mi Facebook">
+          <i class="fab fa-facebook-f"></i>
+          </a>
+          
+          <a href ="https://twitter.com/Edgar_Cardona21"title="Visita mi X"> 
+          <i class="fab fa-twitter"></i>
+          </a>
+            
+          <a href = "https://www.instagram.com/edgar.cardona97/" title="Visita mi Instagram"> 
+          <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href = "https://www.linkedin.com/in/edgar-cardona-g%C3%B3mez-77772218b/" title="Visita mi linkedin"> 
+            <i class="fab fa-linkedin"></i>
+            </a>
+
+      </div>
+          
+
+        
+    </div>
+
+    </div>
+
   </div>
 
-  </footer>
+</footer>
 
 </body>
 </html>

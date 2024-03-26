@@ -4,53 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechBLog</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/style-blog.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     
 </head>
 <body> 
+
+<header class ="header">
+    <!--  Main title and logo   -->
+    <div class="title">
+      <h1 >Tech blog</h1>
+    </div>
+
+    <div  id= "main-logo" class="logo">
+      <a href="/index.html">
+      <img src="/assets/images/home.jpeg" alt ="logo">
+      </a>
+    </div> 
+       
+    <nav class= "nav" id="nav"> <!--  Navigation bar  -->
+      <ul class= "nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/blog.html">Blog de conocimiento</a></li>
+            <li><a href="/html/news.html">Noticias tecnologicas</a></li>
+            <li><a href="/html/about_us.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+        <!--  contact us button  -->
+      <a href="/html/contact.html" class="contact-btn">Contacto</a>
+
+
+    <div class="hamburger" id="hamburger">
+        <div class="hamburger-line">
+
+        </div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+</header>
+
   <main>
-
-    <header>
-            <!--  aqui va el titulo principaly el logo   -->
-            
-            <div id = "main-title-blog" class="title">
-                  <h1 >Tech-news</h1>
-            </div>
-    
-            <div class ="logo">
-              <a href="index.html">
-              <img src="/assets/images/home.jpeg" alt ="logo">
-              </a>
-            </div>
-
-            
-            <!--  Barra de navegacion   -->
-            <nav>
-              <ul class = "nav-links">
-                    <li><a href="index.html">Portafolio</a></li>
-                    <li><a href="blog.html">Blog de conocimiento</a></li>
-                    <li><a href="news.html">Noticias tecnologicas</a></li>
-                    <li><a href="about_us.html">Sobre nosotros</a></li>
-              </ul>
-            </nav>
-             <!--  contact us button  -->
-            <a href="/html/contact.html" class="contact-btn">Contacto</a>
-    </header>
-
-      <section id = "container-introduction" class = "container-introduction"> <!--Introduction-->
-        <article id = "main-description"> <!--Main description page-->
+    <section id = "container-introduction" class = "container-introduction"> <!--Introduction-->
+        <article id = "main-description" class="main-description"> <!--Main description page-->
           <h1>Conociendo desconocidos...</h1> 
-          <q>Ignoramos lo que no estamos dispuestos a aprender </q> 
-          <p>Bienvenido a este espacio, donde podemos conocer a profundidad las grandes mentes que hay detras de la tecnologia 
+           
+            <p> 
+            <q>Ignoramos lo que no estamos dispuestos a aprender </q> <br><br>
+
+            Bienvenido a este espacio, donde podemos conocer a profundidad las grandes mentes que hay detras de la tecnologia 
             como la conocemos hoy en dia. En este blog estaremos hablando sobre personajes ilustres que quizas hayas escuchado
             pero no sabes el impacto que tuvieron y cómo su forma de pensar ha impartido las bases de lo que hoy conocemos como programacion web.
-            Ademas de eso, nos sorprenden con datos curiosos sobre su vida y aportes significaticos en los multiples contextos de sus vidas. </p>
+            <br><br>
+            Ademas de eso, nos sorprenden con datos curiosos sobre su vida y aportes significaticos en los multiples contextos de sus vidas.
+            </p>
         
         </article>
 
         <article class="qualification-table"><!--qualification table-->
+          <h3>TABLA DE NAVEGACION</h3>
           <table >
             <thead>
               <tr>
@@ -100,17 +112,17 @@
             </tbody>
             <tfoot>
               <tr>
-                <td colspan="4">Tabla de Contenidos - Actualizada el 13/03/2024</td>
+                <td colspan="4"><small>Tabla de Contenidos - Actualizada el 25/03/2024</small></td>
               </tr>
             </tfoot>
           </table>
         </article>
-
+      <div class="image-container"></div>
         <img class= "unkown-picture" src="/assets/images/unkown-picture-blog.jpeg" alt="Foto de personas desconocidas">
-      </section>
-      <hr>
+    </section>
+    <hr>
 
-      <section class = "blog-content"> <!--Blog content-->
+    <section class = "blog-content"> <!--Blog content-->
         <article id = "Ritchie"><!--Primer articulo/noticia-->
           <h2>1. Dennis Ritchie </strong></h2>
 
@@ -224,7 +236,7 @@
           </div>
         </aside>
 
-  </section>
+    </section>
 
   </main>
     
@@ -271,5 +283,8 @@
 
   </footer>
    
+
+  <script src = "/js/script.js">
+  </script>
 </body>
 </html>
