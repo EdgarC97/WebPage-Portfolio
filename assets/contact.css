@@ -82,6 +82,18 @@
         font-size: 16px; /* Tamaño de fuente base  */
 }
 
+main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .1)),url(/assets/images/portada-contacto.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: white;
+        height: 90vh;
+    }
+
 /* Header-styles */
 header{
         background-color: #004d71; 
@@ -95,7 +107,7 @@ header{
         z-index: 100; /* Asegura que el encabezado esté por encima de otros elementos */
 
         /* Logo styles */
-        .logo{/* Cambia el cursor a un puntero cuando se pasa sobre el logo */
+        .logo {/* Cambia el cursor a un puntero cuando se pasa sobre el logo */
         cursor:pointer ;
         order: -1;
         }
@@ -184,56 +196,210 @@ header{
         transform: translateY(-3px); /* Mueve el botón flotante hacia arriba cuando se pasa el cursor sobre él */
 }
 
-.footer{
-        background-color: var(--mainColor);
-        padding: 40px 0;
+.footer {
+    background-color: var(--mainColor);
+    padding: 30px 20px;
 }
 
-.footer-row{
-        display: flex;
-        flex-wrap: wrap;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-links{
-        width: 50%;
-        padding: 0 15px;
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-    
+
+.copyright, .footer-links {
+    flex: 1;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .footer-links h4{
-        font-size: 20px;
+        font-size: 16px;
         color: var(--whiteColor);
         margin-bottom: 10px;
-        font-weight: 600;
-        border-bottom: 2px var(--smoothColor);
-        padding-bottom: 10px;
-        display: inline-block;
+        margin-right: 15px;
+
+
+}
+
+.copyright h4{
+        font-size: 16px;
+        color: var(--whiteColor);
 
 }
 
 .social-link a {
-        display: inline-block;
-        min-height: 40px;
-        width: 40px;
-        background-color:rgba(255, 255, 255, 20%);
-        margin: 0 10px 10px;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: var(--whiteColor);
-        transition: all .5s ease;
-
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 20%);
+    margin: 0 10px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    transition: all .5s ease;
 }
 
 .social-link a:hover {
-        background-color: var(--smoothColor);
+    background-color: var(--smoothColor);
 }
 
-.footer-links{
-        color: var(--whiteColor);
-        display: inline-block;
+
+
+/* form style*/
+
+.container {
+        display:grid;
+        grid-template-columns: repeat(2,50%);
+        padding:20px;
+        gap:10px;
+        width: 1000px;
+
+    }
+    
+    .box-info {
+        color:#fff;
+        display:flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+    .box-info > h1 {
+        text-align: left;
+        letter-spacing: 5px;
+    }
+    
+    .data {
+        display: flex;
+        flex-direction: column;
+        gap:25px
+    }
+    
+    .data > p {
+        font-size: 1rem;
+    }
+    
+    .data > p > i {
+        color:var(--smoothColor);
+        margin-right: 10px;
+        font-size:25px;
+    }
+    
+    form {
+        display:flex;
+        flex-direction: column;
         text-align: center;
-}
+        gap:15px;
+    }
+    
+    .input-box {
+        position:relative;
+    }
+    
+    .input-box > input {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        outline:none;
+        background: rgba(255 255 255 / .1);
+        border:3px solid transparent;
+        letter-spacing: 1px;
+        transition:.3s;
+        color:#fff;
+        
+    }
+    
+    .input-box > input::placeholder,
+    .input-box > textarea::placeholder {
+        color:#a3a3a3;
+        
+    }
+    
+    .input-box > input:focus::placeholder,
+    .input-box > textarea:focus::placeholder {
+        color:transparent;
+    }
+    
+    .input-box > input:focus,
+    .input-box > textarea:focus {
+        border-bottom:3px solid var(--smoothColor);
+        animation: shake .2s;
+    }
+    
+    .input-box > textarea {
+        width: 100%;
+        height: 130px;
+        padding: 10px;
+        background: rgba(255 255 255 / .1);
+        border:3px solid transparent;
+        letter-spacing: 1px;
+        outline: none;
+        transition:.3s;
+        color:#fff;
+        letter-spacing: 1.5px;
+    }
+    
+    
+    .input-box > i {
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right: 10px;
+        color:rgba(255 255 255 / .3);
+        transition: .3s;
+    }
+    
+    .input-box > input:focus ~ i {
+        color:var(--smoothColor);
+    }
+    
+    form > button {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        background: var(--brownColor);
+        color:#fff;
+        border:none;
+        transition: .1s;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    form > button:hover,
+    .links > a:hover {
+        background: var(--smoothColor);
+    }
 
+    
+    @media screen and (max-width:600px) {
+        .container {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+        }
+    
+        .box-info {
+            gap:15px;
+        }
+    
+        .box-info > h1 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    
 
 @media (max-width: 600px) {
 
@@ -283,4 +449,3 @@ header{
         }
 }
 
-      
