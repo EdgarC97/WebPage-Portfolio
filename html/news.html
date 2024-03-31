@@ -11,11 +11,8 @@
 </head>
 <body>
 
-<header>
-    <!--  Main title and logo   -->
-    <div  class="title">
-      <h1 >Tech news</h1>
-    </div>
+<header class = "header">
+    <!-- Logo  -->
 
     <div id = "main-logo" class ="logo">
       <a href="/index.html">
@@ -37,41 +34,149 @@
 
 </header>
 
-<main>
+<main class = "main">
 
-    <section>
-        <div  class="New-list-title"> <!--  News list title   -->
-          <h2> Lista de noticias que encontrarás en esta pagina </h2>
+  <div class="container">
+    <div class="news-section">
+        <div class="title">
+            <h2>Tech-news</h2>
+            <div  class="New-list-title"> <!--  News list title   -->
+                <h3> Lista de noticias que encontrarás en esta pagina </h3>
+              </div>
+            
+              <ol> <!--  News list   -->
+                      <li><a href = "#Riwi"> Riwi - Centro de formacion  en TICs.</a></li> 
+                      <li><a href = "#Ciber"> Ciberseguidad en 2024.</a></li> 
+                      <li><a href = "#IA"> Etapas de la inteligencia artificial.</a></li> 
+                      <li><a href = "#habilities"> Habilidades blandas para tener en cuenta este 2024.</a></li> 
+                      <li><a href = "#Trend"> Tendencias tecnologicas para este 2024</a></li> 
+                      <li><a href = "#Salary"> Salarios sector tecnologico en Colombia.</a></li>                  
+              </ol> <br>  <br>
         </div>
-      
-        <ol> <!--  News list   -->
-                <li><a href = "#Riwi"> Riwi - Centro de formacion  en TICs.</a></li> 
-                <li><a href = "#Ciber"> Riwi - Ciberseguidad en 2024.</a></li> 
-                <li><a href = "#IA"> Etapas de la inteligencia artificial.</a></li> 
-                <li><a href = "#habilities"> Habilidades blandas para tener en cuenta este 2024.</a></li> 
-                <li><a href = "#Trend"> Tendencias tecnologicas para este 2024</a></li> 
-                <li><a href = "#Salary"> Salarios sector tecnologico en Colombia.</a></li>                  
-        </ol> <br> <hr>  <br>
+        <div class="cards">
+            <div id = "Riwi" class="card"><!--Primer articulo/noticia-->
+                <div class="image-section">
+                    <img src="/assets/images/Riwi.png" alt="blog-image">
+                </div>
+                <div class="content">
+                    <h4>1. En 'Medallo' hay una nueva fábrica de genios informáticos</h4>
+                    <p>En las calles de Medellín corre un rumor: la plata hoy está en la programación y el desarrollo de software. Aunque son trabajos muy abstractos para un buen pedazo de la población; saben que hay empleos y buena paga en ese sector.
 
-        <article id = "Riwi"><!--Primer articulo/noticia-->
-            <h2>1. En 'Medallo' hay una nueva fábrica de genios informáticos</h2>
-            <p>
-            <small>
-            Fecha de publicación: 03 de Diciembre de 2023<br>
-            Autor: <a href = "https://www.elcolombiano.com/">El Colombiano</a> <br>
-            </small>
-            <br> <img src ="/assets/images/Riwi.png" alt ="Jovenes iniciando en Riwi"> <br>
+                        El problema es que hay una escasez en este tipo de talento; las empresas necesitan gente para saltar a la nueva era de los negocios y no consiguen lo que están buscando.
+            
+                        Obviamente, por ley de oferta y demanda, siempre será más valioso aquello difícil de encontrar en el mercado. Por eso es que los salarios son el gancho que lanzan las compañías para jalar a los pocos instruidos en la informática.
+            
+                        Fiel al espíritu pujante de sus ancestros, los paisas no se quedan quietos y ya montaron una fábrica para ensamblar a los genios que están haciendo falta. La idea es que la economía antioqueña se mueva en la dirección que exige la Cuarta Revolución Industrial.</p>
+                    <a href="#Riwi-complete-new">Read more</a>
+                </div>
+                <div class="posted-date">
+                        <p> <small> Posted on Dic 03 , 2023
+                        <br>Autor: <a href = "https://www.elcolombiano.com/">El Colombiano</a>
+                        </small> 
+                        </p>
+                </div>
+            </div>
+            <div id = "Ciber" class="card"> <!--Segundo articulo/noticia-->
+                <div class="image-section">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wealthmanagement.com%2Fsites%2Fwealthmanagement.com%2Ffiles%2FUnitedPlanners_Cybersecurity_WhitePaper_iStock-614137876-3_1.jpg&amp;f=1&amp;nofb=1&amp;ipt=8186deec7f0135c80cbdfc5cca19a928c2f9151cded16e5f5085b7d482fae00f&amp;ipo=images" alt="Imagen de ciberseguridad">
+                </div>
+                <div class="content">
+                    <h4>2. Ciberseguridad en 2024: las claves para estar al día con las últimas tendencias</h4>
+                    <p>La ciberseguridad en 2024 se ha convertido en un tema de vital importancia en todo el mundo. Con el avance de la tecnología y la creciente dependencia de las redes digitales para casi todas las facetas de la vida, la necesidad de proteger la información y los sistemas digitales nunca ha sido tan crucial. Las amenazas cibernéticas han evolucionado y se han vuelto más sofisticadas, y los ciberdelincuentes continúan encontrando nuevas formas de explotar las vulnerabilidades en los sistemas de información.</p>
+                    <a href="#Ciber-complete-new">Read more</a>
+                </div>
+                <div class="posted-date">
+                    <small><p>Posted on Nov 01, 2023 <br>
+                        Autor: <a href = "https://www.bbc.com/"> BBC</a> 
+                    </p>
+                    </small>
+                </div>
+            </div>
+            <div id = "IA" class="card"><!--Tercer articulo/noticia-->
+                <div class="image-section">
+                    <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FAA1bSYpN.img%3Fw%3D1200%26h%3D675%26m%3D4%26q%3D79&f=1&nofb=1&ipt=04c478b332375728a171cf581a652530601eb3e7fbbaaeb45777652ea7bb20c1&ipo=images" alt = "3 etapas de inteligencia artificial">
+                </div>
+                <div class="content">
+                    <h4>3. Las 3 etapas de la Inteligencia Artificial: en cuál estamos y por qué muchos piensan que la tercera puede ser fatal</h4>
+                    <p>Desde que se lanzó a finales de noviembre 2022, ChatGPT, el chatbot que usa inteligencia artificial (IA) para responder preguntas o generar textos a pedido de usuarios, se ha convertido en la aplicación de internet con el crecimiento más rápido de la historia.
 
-            <br>En las calles de Medellín corre un rumor: la plata hoy está en la programación y el desarrollo de software. Aunque son trabajos muy abstractos para un buen pedazo de la población; saben que hay empleos y buena paga en ese sector.
+                        En apenas dos meses llegó a tener 100 millones de usuarios activos. A la popular app TikTok le tardó nueve meses alcanzar ese hito. Y a Instagram dos años y medio, según datos de la empresa de monitoreo tecnológico Sensor Town.</p>
+                    <a href="#IA-complete-new">Read more</a>
+                </div>
+                <div class="posted-date">
+                        <small><p>Posted on May 29 , 2023
+                        <br>Autor: <a href = "https://cyberwarmag.com/"> Cyberwarmag</a>
+                        </small>
+                        </p>
+                </div>
+            </div>
+            <div id = "habilities" class="card"><!--Cuarto articulo/noticia-->
+                <div class="image-section">
+                    <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mentesliberadas.com%2Fwp-content%2Fuploads%2F2019%2F01%2Fsoft-skills-1.jpg&f=1&nofb=1&ipt=341813b09ef28a6340dd648cabc61b4e890ce82d2c9a8436dece1fba51ffa559&ipo=images" alt = "Imagen de habilidades blandas">
+                </div>
+                <div class="content">
+                    <h4>4. Habilidades blandas más demandadas por las empresas para 2024</h4>
+                    <p>El sector tech está en constante cambio y evolución. Aquí ya no vale solo con tener la titulación básica que te habilita para un trabajo. Este sector ha cambiado tanto en los últimos años que, si tus conocimientos técnicos no se acompañan de las llamadas habilidades blandas más demandadas es difícil que pases la entrevista de trabajo.Por si no estás familiarizada con el término, las habilidades blandas o soft skills son una serie de destrezas profesionales a las que antes no se les prestaba mucha atención pero hoy son claves para los expertos en recursos humanos. ¿Quieres saber más sobre ellas?.</p>
+                    <a href="#habilities-complete-new">Read more</a>
+                </div>
+                <div class="posted-date">
+                        <small><p>Posted on Dic 28 , 2022
+                        <br>Autor: <a href = "https://adalab.es/"> Adalab</a> 
+                        </small>
+                        </p>
+                </div>
+            </div>
+            <div id = "Trend" class="card"> <!--Quinto articulo/noticia-->
+                <div class="image-section">
+                    <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fproblemon%2Fimage%2Fupload%2Fv1575915340%2Fuploads%2Fdatos_xuee0i.png&f=1&nofb=1&ipt=9f36b8cc8b9cd38d76f8de19729c20394f7625086f1b6b7ca4c02de024704b45&ipo=images" alt= "Imagen de un data center" ><br>
+                </div>
+                <div class="content">
+                    <h4>5. Tendencias tecnologicas : Más datos y cloud . Lo qué esperan de la tecnología en 2024 los expertos y directivos</h4>
+                    <p>
+                      Tras un 2023 que ha traído muchas alegrías (pero también algún que otro quebradero de cabeza) para el sector de la tecnología, todas las miradas se dirigen ahora hacia un nuevo horizonte: 2024. 
+                      <br>
+                      En muchos ámbitos se espera que el nuevo año sea positivo para la industria, pero eso no evita que haya muchas incógnitas que aún están por aclararse y que muchos ámbitos pueden verse afectados por un contexto político, geoestratégico y económico especialmente inestable últimamente.
+                      <br><br>
+                      Desde un mercado de dispositivos bajista que está a punto de remontar hasta el efecto de la economía en la inversión de las empresas en tecnologías más allá de la gran protagonista de los últimos tiempos la inteligencia artificial, 2024 será una vez más un año de grandes titulares para la tecnología en general.
+                      <br>
+                      Business Insider España se ha propuesto poner luz a las incertidumbres y ha preguntado a los principales expertos y directivos del sector para conocer qué es lo que esperan del 2024 para la tecnología.
+                    </p>
+                    <a href="#Trend-complete-new">Read more</a>
+                </div>
+                <div class="posted-date">
+                        <small><p>Posted on Jan 03 , 2024
+                        <br>Autor: <a href = "https://www.businessinsider.es/"> Bussines Insider</a>
+                        </small>
+                        </p>
+                </div>
+            </div>
+            <div  id = "Salary" class="card"><!--Sexto articulo/noticia-->
+                <div class="image-section">
+                    <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.semana.com%2Fresizer%2FgOtGomFMlAWoQ5HL75E6A3p-F_Y%3D%2F1920x1080%2Fsmart%2Ffilters%3Aformat(jpg)%3Aquality(80)%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fsemana%2FJLGTRKYQVBA4RNZN3XZBP3OFDU.jpg&f=1&nofb=1&ipt=0f027292dd0c9d62120003a213bb2c5dbac0d3e1d26d1fe1cf7c0ec69fdb2987&ipo=images" alt= "Imagen de un data center" ><br>
+                </div>
+                <div class="content">
+                    <h4>6. Entre 5 y 26 millones de pesos al mes: estos son los salarios de los perfiles tecnológicos clave para el 2024 en Colombia</h4>
+                    <p> A medida que Colombia se sumerge en una transformación digital sin precedentes, el mercado laboral revela una demanda creciente de talento tecnológico especializado para el año 2024.
 
-            El problema es que hay una escasez en este tipo de talento; las empresas necesitan gente para saltar a la nueva era de los negocios y no consiguen lo que están buscando.
+                        Con la digitalización en el centro de la estrategia empresarial, los perfiles tecnológicos asociados al desarrollo de software, DevOps, las ciencias de datos, ciberseguridad, y móviles se posicionan como los más codiciados por las compañías nacionales e internacionales que operan en el país.</p>
+                    <a href="#Salary-complete-new">Read more</a>
+                </div>
+                <div class="posted-date">
+                        <small><p>Posted on March 11 , 2024
+                        <br>Autor: <a href = "https://www.xataka.com.co/"> Xataka</a>  
+                        </small>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<hr>
+    <section>
 
-            Obviamente, por ley de oferta y demanda, siempre será más valioso aquello difícil de encontrar en el mercado. Por eso es que los salarios son el gancho que lanzan las compañías para jalar a los pocos instruidos en la informática.
-
-            Fiel al espíritu pujante de sus ancestros, los paisas no se quedan quietos y ya montaron una fábrica para ensamblar a los genios que están haciendo falta. La idea es que la economía antioqueña se mueva en la dirección que exige la Cuarta Revolución Industrial.
-
+        <article id = "Riwi-complete-new"><!--Primer articulo/noticia-->
             <h3>Academia futurista</h3>
-
+            <p>
             Tomás Solano y Juan José Aramburo son los hombres detrás de Riwi —que como se mencionó antes— tiene el objetivo de ser la fábrica de los informáticos con el sello “Made in Medellín”.
 
             Hace dos meses abrió las puertas y ya está preparando a la primera cohorte de 300 jóvenes; becados al 100%, llegados de todas las esquinas del Valle de Aburrá y con la promesa de convertirse en una generación de expertos que saque la cara por la región.
@@ -99,15 +204,8 @@
         </article> 
         <br> <hr>  <br>
 
-        <article id = "Ciber"> <!--Segundo articulo/noticia-->
-            <h2>2. Ciberseguridad en 2024: las claves para estar al día con las últimas tendencias</h2> 
-            <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wealthmanagement.com%2Fsites%2Fwealthmanagement.com%2Ffiles%2FUnitedPlanners_Cybersecurity_WhitePaper_iStock-614137876-3_1.jpg&f=1&nofb=1&ipt=8186deec7f0135c80cbdfc5cca19a928c2f9151cded16e5f5085b7d482fae00f&ipo=images" alt = "Imagen de ciberseguridad"><br>
-            <small><br> Fecha de publicación: 01 de Noviembre de 2023
-            <br> Autor: <a href = "https://www.bbc.com/"> BBC</a> 
-            </small> 
-
-            <br><p>La ciberseguridad en 2024 se ha convertido en un tema de vital importancia en todo el mundo. Con el avance de la tecnología y la creciente dependencia de las redes digitales para casi todas las facetas de la vida, la necesidad de proteger la información y los sistemas digitales nunca ha sido tan crucial. Las amenazas cibernéticas han evolucionado y se han vuelto más sofisticadas, y los ciberdelincuentes continúan encontrando nuevas formas de explotar las vulnerabilidades en los sistemas de información.
-
+        <article id = "Ciber-complete-new" > <!--Segundo articulo/noticia-->
+            <p>  
             En respuesta a estas amenazas, la industria de la ciberseguridad ha experimentado un crecimiento significativo y una rápida evolución. Las empresas y organizaciones están invirtiendo más que nunca en tecnologías de seguridad avanzadas y en la formación de personal especializado en ciberseguridad. Además, la cooperación internacional en la lucha contra el cibercrimen se ha intensificado, con un enfoque en compartir información sobre amenazas y mejorar las prácticas de ciberseguridad a nivel global. A pesar de estos esfuerzos, el desafío de mantenerse al día con las amenazas cibernéticas sigue siendo una tarea formidable.
             </p> 
             <h3>Principales retos de  la ciberseguridad en 2024</h3>
@@ -124,17 +222,8 @@
         </article>
         <br> <hr>  <br>
 
-        <article id = "IA"><!--Tercer articulo/noticia-->
-          <h2>3. Las 3 etapas de la Inteligencia Artificial: en cuál estamos y por qué muchos piensan que la tercera puede ser fatal</h2> 
-          <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FAA1bSYpN.img%3Fw%3D1200%26h%3D675%26m%3D4%26q%3D79&f=1&nofb=1&ipt=04c478b332375728a171cf581a652530601eb3e7fbbaaeb45777652ea7bb20c1&ipo=images" alt = "3 etapas de inteligencia artificial"><br>
-          <small>
-            <br> Fecha de publicación: 29 de mayo 2023
-            <br> Autor: <a href = "https://cyberwarmag.com/"> Cyberwarmag</a>  
-          </small>
-          <br><p>Desde que se lanzó a finales de noviembre 2022, ChatGPT, el chatbot que usa inteligencia artificial (IA) para responder preguntas o generar textos a pedido de usuarios, se ha convertido en la aplicación de internet con el crecimiento más rápido de la historia.
-
-            En apenas dos meses llegó a tener 100 millones de usuarios activos. A la popular app TikTok le tardó nueve meses alcanzar ese hito. Y a Instagram dos años y medio, según datos de la empresa de monitoreo tecnológico Sensor Town.
-            
+        <article id = "IA-complete-new" ><!--Tercer articulo/noticia-->
+            <p>
             "En los 20 años que llevamos siguiendo internet, no podemos recordar un incremento más veloz de una aplicación de internet para consumidores", afirmaron analistas de UBS, quienes reportaron el récord en febrero.<br>
             
             <br>La masiva popularidad de ChatGPT, desarrollado por la empresa OpenAI, con respaldo financiero de Microsoft, ha despertado todo tipo de discusiones y especulaciones sobre el impacto que ya está teniendo y que tendrá en nuestro futuro cercano la inteligencia artificial generativa.
@@ -194,16 +283,7 @@
         </article>
         <br> <hr>  <br>
 
-        <article id = "habilities"><!--Cuarto articulo/noticia-->
-          <h2>4. Habilidades blandas más demandadas por las empresas para 2024</h2> 
-          <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mentesliberadas.com%2Fwp-content%2Fuploads%2F2019%2F01%2Fsoft-skills-1.jpg&f=1&nofb=1&ipt=341813b09ef28a6340dd648cabc61b4e890ce82d2c9a8436dece1fba51ffa559&ipo=images" alt = "Imagen de habilidades blandas"> <br>
-          <small>
-            <br> Fecha de publicación: 28 de diciembre de 2022
-            <br> Autor: <a href = "https://adalab.es/"> Adalab</a> 
-          </small>
-          <p>
-          <br>El sector tech está en constante cambio y evolución. Aquí ya no vale solo con tener la titulación básica que te habilita para un trabajo. Este sector ha cambiado tanto en los últimos años que, si tus conocimientos técnicos no se acompañan de las llamadas habilidades blandas más demandadas es difícil que pases la entrevista de trabajo.Por si no estás familiarizada con el término, las habilidades blandas o soft skills son una serie de destrezas profesionales a las que antes no se les prestaba mucha atención pero hoy son claves para los expertos en recursos humanos. ¿Quieres saber más sobre ellas.
-          </p>
+        <article id = "habilities-complete-new" ><!--Cuarto articulo/noticia-->
           <h3>¿Qué son exactamente las soft skills?</h3>
           <p>Las soft skills, o habilidades blandas, son competencias sociales que tienen que ver con cómo se desempeña una persona en su puesto de trabajo. Son, entre otras cosas, habilidades como la relación entre personas, su forma y capacidad para aprender, las dotes comunicativas y la creatividad al realizar una tarea.Hoy en día, la mayoría de los empleadores y empleadoras confiesan que las habilidades blandas suponen hasta un 80 % del peso de la decisión a la hora de contratar a una persona. Es decir, tus conocimientos relacionados con el puesto te llevarán hasta la entrevista pero, en este mundo tan competitivo, son las soft skills más demandadas las que harán que te hagas con el puesto.Para muchas personas son innatas, pero eso no impide que tú llegues a poder desarrollarlas. Solo tienes que poner esfuerzo, interés y ganas por aplicarlas en tu día a día. Lo mejor de estas habilidades es que una máquina no puede automatizarlas y no las puede realizar ningún tipo de IA. Y eso es algo que en el sector en el que nos movemos es toda una ventaja, ¿no te parece?</p>
 
@@ -234,23 +314,9 @@
         </article>
         <br> <hr>  <br>
 
-        <article id = "Trend"><!--Quinto articulo/noticia-->
-          <h2>5. Tendencias tecnologicas : Más datos y cloud . Lo qué esperan de la tecnología en 2024 los expertos y directivos</h2> 
-          <small>
-            <br> Fecha de publicación: 3 ene. 2024
-            <br> Autor: <a href = "https://www.businessinsider.es/"> Bussines Insider</a>  
-          </small>
-          <p>
-            <br>Tras un 2023 que ha traído muchas alegrías (pero también algún que otro quebradero de cabeza) para el sector de la tecnología, todas las miradas se dirigen ahora hacia un nuevo horizonte: 2024. 
-
-            En muchos ámbitos se espera que el nuevo año sea positivo para la industria, pero eso no evita que haya muchas incógnitas que aún están por aclararse y que muchos ámbitos pueden verse afectados por un contexto político, geoestratégico y económico especialmente inestable últimamente.
-            
-            Desde un mercado de dispositivos bajista que está a punto de remontar hasta el efecto de la economía en la inversión de las empresas en tecnologías más allá de la gran protagonista de los últimos tiempos la inteligencia artificial, 2024 será una vez más un año de grandes titulares para la tecnología en general.
-            
-            Business Insider España se ha propuesto poner luz a las incertidumbres y ha preguntado a los principales expertos y directivos del sector para conocer qué es lo que esperan del 2024 para la tecnología.
-          </p>
+        <article id = "Trend-complete-new"><!--Quinto articulo/noticia-->
           <h3>2024: un año más de la era del dato</h3>
-          <br> <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fproblemon%2Fimage%2Fupload%2Fv1575915340%2Fuploads%2Fdatos_xuee0i.png&f=1&nofb=1&ipt=9f36b8cc8b9cd38d76f8de19729c20394f7625086f1b6b7ca4c02de024704b45&ipo=images" alt= "Imagen de un data center" ><br>
+          <br>
           <p>
             Varios expertos coinciden en que la tecnología tendrá en el dato a uno de sus mejores representantes en el año nuevo.
             En el 2022, la industria del dato o big data atrajo una inversión estimada de 154.900 millones de dólares en todo el mundo, según datos de ResearchAndMarkets, que prevé un crecimiento muy fuerte en los próximos años, hasta llegar a los 353.900 millones de dólares en 2030.
@@ -290,13 +356,7 @@
           </article>
           <br> <hr>  <br>
 
-        <article id = "Salary"><!--Sexto articulo/noticia-->
-          <h2>6. Entre 5 y 26 millones de pesos al mes: estos son los salarios de los perfiles tecnológicos clave para el 2024 en Colombia</h2> 
-          <br> <image src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.semana.com%2Fresizer%2FgOtGomFMlAWoQ5HL75E6A3p-F_Y%3D%2F1920x1080%2Fsmart%2Ffilters%3Aformat(jpg)%3Aquality(80)%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fsemana%2FJLGTRKYQVBA4RNZN3XZBP3OFDU.jpg&f=1&nofb=1&ipt=0f027292dd0c9d62120003a213bb2c5dbac0d3e1d26d1fe1cf7c0ec69fdb2987&ipo=images" alt= "Imagen de un data center" ><br>
-          <small>
-            <br> Fecha de publicación: 11 Marzo de 2024
-            <br> Autor: <a href = "https://www.xataka.com.co/"> Xataka</a>   
-          </small>
+        <article id = "Salary-complete-new"><!--Sexto articulo/noticia-->
           <p>
             A medida que Colombia se sumerge en una transformación digital sin precedentes, el mercado laboral revela una demanda creciente de talento tecnológico especializado para el año 2024.
 
@@ -332,19 +392,16 @@
           <br> En conclusión, la dinámica del mercado laboral en Colombia para el 2024 muestra un futuro prometedor para los profesionales tecnológicos. Con la transformación digital acelerando a un ritmo sin precedentes, nunca ha habido un mejor momento para los talentos en TI en Colombia.
           </p>
           
-
-
           <a href="https://www.xataka.com.co/empresas-y-economia/5-26-millones-pesos-al-mes-estos-salarios-perfiles-tecnologicos-clave-para-2024-colombia#:~:text=As%C3%AD%20mismo%2C%20los%20a%C3%B1os%20de%20experiencia%20y%20la,de%20datos%3A%20Entre%209.000.000%20y%2025.000.000%20de%20pesos">Link de la noticia</a>
           <hr>
-        </article><br> <hr>  <br>
+        </article><br> 
 
-        <aside>   <!-- float button and contac us button  -->      
+        <aside>   <!-- float button -->      
               <div class = "container-boton"> 
                 <div class = "btn-float">
-                  <a href="#main-logo" title="Volver arriba"> + </a>
+                  <a href="#main-logo" title="Volver arriba"> ↑ </a>
                 </div>
               </div>
-              <a href="contacto.html" class="btn">Contacto</a>
         </aside>
 
     </section>
@@ -353,7 +410,7 @@
 
 <footer class = "footer">
     
-    <div class="container">
+  <div class="container">
     
     <div class="footer-row">
 

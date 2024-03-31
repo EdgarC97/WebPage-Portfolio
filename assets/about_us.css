@@ -13,6 +13,8 @@
         --whiteColor: #ffffff;
         --blackColor: #000000;
         --brownColor: #5d5c49;
+        --primary-color: #8921eb;
+        --primary-color-dark: #a573d4;
         
       
         /* utilities */
@@ -140,23 +142,141 @@ header{
 
         /*Contact button styles */
         .contact-btn{
-        font-weight: 700; 
-        color: white; 
-        padding: 15px 25px; /* Relleno alrededor del botón - 9px arriba y abajo , 25 px a los lados */
-        background: #410099; 
-        border: none; /* Elimina el borde del botón */
-        border-radius: 50px; 
-        cursor: pointer; 
-        transition: all 0.3s; 
+            font-weight: 700; 
+            color: white; 
+            padding: 15px 25px; /* Relleno alrededor del botón - 9px arriba y abajo , 25 px a los lados */
+            background:var(--secondColor); 
+            border: none; /* Elimina el borde del botón */
+            border-radius: 50px; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+            text-decoration: none;
+            }
+            
+            .contact-btn:hover{
+            background-color:var(--primary-color) ; 
+            color :white; 
+            transform: scale(1.1) ;
+            }    
+}
+
+/* section-styles */
+
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .section{
+        width: 100%;
+        min-height: 100vh;
+        background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 2px,rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 3px,transparent 3px, transparent 5px,rgba(0,0,0,0.03) 5px, rgba(0,0,0,0.03) 7px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 9px,rgb(255,255,255) 9px, rgb(255,255,255) 21px,rgb(255,255,255) 21px, rgb(255,255,255) 31px,rgb(255,255,255) 31px, rgb(255,255,255) 40px); background-size: 20px 20px;
+
+    }
+    
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    
+    .content-section{
+        float: left;
+        width: 55%;
+    }
+    
+    .image-section{
+        float: right;
+        width: 40%;
+    }
+    
+    .image-section >img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .content-section .title{
+        text-transform: uppercase;
+    }
+    
+    .content-section .content >h3{
+        margin-top: 20px;
+    }
+    
+    .content-section .content >p{
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 50px;
+    }
+    
+    .content-section .content .button{
+        margin-top: 50px;
+        
+    
+    }
+    
+    .content-section .content .button >a {
+        background-color: var(--primary-color);
+        padding: 12px 40px;
         text-decoration: none;
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        border-radius: 10px;
+        color:var(--whiteColor);
+    }
+    
+    .content-section .content .button >a:hover{
+        background-color: var(--primary-color-dark);
+        color: var(--blackColor);
+    }
+    
+    @media screen and (max-width: 768px){
+        .container{
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 50px;
         }
         
-        .contact-btn:hover{
-        background-color:#410099 ; 
-        color :white; 
-        transform: scale(1.1) ;
-        }   
-}
+        .content-section{
+            float:none;
+            width: 100%;
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    
+        .image-section{
+            float:none;
+            width: 100%;
+        }
+    
+        .image-section img{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    
+        .content-section .title{
+            text-align: center;
+            font-size: 19px;
+    
+        }
+    
+        .content-section .content .button{
+            text-align: center;
+        }
+        
+        .content-section .content .button >a{
+            padding: 9px 30px;
+        }
+    
+    }
 
 
 /* Estilos para el botón flotante dentro del contenedor */
@@ -183,52 +303,60 @@ header{
         transform: translateY(-3px); /* Mueve el botón flotante hacia arriba cuando se pasa el cursor sobre él */
 }
 
-.footer{
+/* footer styles */
+.footer {
         background-color: var(--mainColor);
-        padding: 40px 0;
-}
-
-.footer-row{
-        display: flex;
-        flex-wrap: wrap;
-}
-
-.footer-links{
-        width: 50%;
-        padding: 0 15px;
-}
+        padding: 30px 20px;
+    }
     
-.footer-links h4{
-        font-size: 20px;
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .copyright, .footer-links {
+        flex: 1;
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .footer-links h4{
+            font-size: 16px;
+            color: var(--whiteColor);
+            margin-bottom: 10px;
+            margin-right: 15px;
+    }
+
+    .copyright h4{
+        font-size: 16px;
         color: var(--whiteColor);
-        margin-bottom: 10px;
-        font-weight: 600;
-        border-bottom: 2px var(--smoothColor);
-        padding-bottom: 10px;
-        display: inline-block;
 
 }
 
 .social-link a {
-        display: inline-block;
-        min-height: 40px;
-        width: 40px;
-        background-color:rgba(255, 255, 255, 20%);
-        margin: 0 10px 10px;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: var(--whiteColor);
-        transition: all .5s ease;
-
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 20%);
+    margin: 0 10px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    transition: all .5s ease;
 }
 
 .social-link a:hover {
-        background-color: var(--smoothColor);
-}
-
-.footer-links{
-        color: var(--whiteColor);
-        display: inline-block;
-        text-align: center;
+    background-color: var(--smoothColor);
 }

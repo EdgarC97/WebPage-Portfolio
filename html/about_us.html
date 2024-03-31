@@ -12,11 +12,7 @@
 <body> 
 
 <header class = "header">
-    <!--  Main title and logo   -->
-    <div class="title">
-      <h1 >About us</h1>
-    </div>
-
+    <!-- Logo   -->
     <div  id= "main-logo" class ="logo">
       <a href="/index.html">
       <img src="/assets/images/home.jpeg" alt ="logo">
@@ -35,18 +31,42 @@
     <a href="/html/contact.html" class="contact-btn">Contacto</a>
 </header>
 
-<main>
+<main class = "main-container">
+
+  <div class="section">
+    <div class="container">
+        <div class="content-section">
+            <div class="title">
+                <h1>About us</h1>
+            </div>
+            <div class="content">
+                <h3><q>Tranquilo y feliz siempre</q></h3>
+                  <p>Soy Edgar Cardona, nacido en Barranquilla- Atlantico, tengo 27 años , soy Arquitecto de profesion y el segundo de dos hijos.<br><br>
+                  Me considero una persona sincera, alegre, estudioso, trabajador, responsable y con muchas ganas de salir adelante. Cuando me propongo algo lo logro 
+                  y me gusta trabajar inteligentemente para cumplir mis metas.</p>
+                <div class="button">
+                    <a href="#family-container">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="/assets/images/about-photo.png" alt="Edgar-photo">
+        </div>
+    </div>
+</div>
+
   <section>
           <article>
-              <h2><q>Tranquilo y feliz siempre</q></h2>
-
+            <div id = "family-container" class="family-container">
               <h2>Familia y datos basicos</h2>
-              <p>Soy Edgar Cardona, nacido en Barranquilla- Atlantico, tengo 27 años , soy Arquitecto de profesion y el segundo de dos hijos. Mi mama es de Aracataca,
+              <p>Mi mama es de Aracataca,
               mi papa es de Pereira, mi hermana de Bogotà y yo de la costa. 
               Me considero una persona sincera, alegre, estudioso, trabajador, responsable y con muchas ganas de salir adelante. Cuando me propongo algo lo logro 
               y me gusta trabajar inteligentemente para cumplir mis metas.</p> 
               <br> <img src = "/assets/images/edgar_family.jpeg" alt ="Familia de Edgar Cardona"> <br>
               <hr>
+            </div>
+
 
               <h2>Educacion </h2>
               <p>Desde el inicio estudiè toda mi primaria en un solo colegio y mi bachillerato tambien, luego estudiè arquitectura en la universidad del Atlantico
@@ -89,55 +109,42 @@
           <aside> <!-- float button  -->
             <div class = "container-boton"> 
               <div class = "btn-float">
-                <a href="#main-logo" title="Volver arriba"> + </a>
+                <a href="#main-logo" title="Volver arriba"> ↑ </a>
               </div>
             </div>
           </aside>
   </section>
 </main>  
   
-  <footer class = "footer">
-    
-    <div class="container">
-    
-    <div class="footer-row">
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-row">
+          <!-- Copyright -->
+          <div class="copyright">
+              <h4>Todos los derechos reservados Edgar Cardona ©2024</h4>
+          </div>
 
-     
-    <!-- Copyright -->
-    <div class="footer-links">
-      <h4>Todos los derechos reservados Edgar Cardona ©2024</h4>
-    </div> 
-      
-    <div class="footer-links">
-        <h4>Siguenos</h4>
-        <div class="social-link">
-          <a href="https://www.facebook.com/Edgardemjdm/?locale=es_LA" title="Visita mi Facebook">
-          <i class="fab fa-facebook-f"></i>
-          </a>
-          
-          <a href ="https://twitter.com/Edgar_Cardona21"title="Visita mi X"> 
-          <i class="fab fa-twitter"></i>
-          </a>
-            
-          <a href = "https://www.instagram.com/edgar.cardona97/" title="Visita mi Instagram"> 
-          <i class="fab fa-instagram"></i>
-          </a>
-
-          <a href = "https://www.linkedin.com/in/edgar-cardona-g%C3%B3mez-77772218b/" title="Visita mi linkedin"> 
-            <i class="fab fa-linkedin"></i>
-            </a>
-
+          <!-- Social Links -->
+          <div class="footer-links">
+              <h4>Síguenos</h4>
+              <div class="social-link">
+                  <a href="https://www.facebook.com/Edgardemjdm/?locale=es_LA" title="Visita mi Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/Edgar_Cardona21" title="Visita mi Twitter">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/edgar.cardona97/" title="Visita mi Instagram">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/edgar-cardona-g%C3%B3mez-77772218b/" title="Visita mi LinkedIn">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </div>
+          </div>
       </div>
-          
-
-        
-    </div>
-
-    </div>
-
   </div>
-
-  </footer>
+</footer>
      
 </body>
 </html>

@@ -8,20 +8,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
    
 </head>
-
 <body> 
 
 <header class ="header">
-    <!--  Main title and logo   -->
-    <div class="title">
-      <h1 >Portafolio</h1>
-    </div>
+    <!--  Logo and hamburguer   -->
+
 
     <div  id= "main-logo" class="logo">
       <a href="/index.html">
       <img src="/assets/images/home.jpeg" alt ="logo">
       </a>
     </div> 
+
+    <!-- <div class="logo"><a href="">Edgar</a></div>
+      <label for="check" class= "chekbox">
+        <i class="ri-menu-line"></i> 
+      </label> -->
        
     <nav class= "nav" id="nav"> <!--  Navigation bar  -->
       <ul class= "nav-links">
@@ -34,8 +36,7 @@
         <!--  contact us button  -->
 
       <a href="/html/contact.html" class="contact-btn">Contacto</a>
-
-
+ 
     <div class="hamburger" id="hamburger">
         <div class="hamburger-line">
 
@@ -47,46 +48,89 @@
 
 <main class = "main">      
     <section>
-        <article> <!-- my description and projects-->
-          <p>
-           <br> Bienvenido! Mi nombre es Edgar Cardona, soy Arquitecto de profesion y tambien me he formado como Desarrollador web. Siempre me ha gustado hacer proyectos en los cuales pueda incluir todas mis areas de conocimiento y he encontrado en el diseño y experiencia de usuario una pasion que quisera compartir contigo. A lo largo de mis años de estudio he aprendido que nunca es suficiente cualquier conocimiento adquirido y es por eso que me sigo capacitando para incorporar nuevas tecnologias y herramientas a mis trabajos. Es por eso que he decidido compartir todo lo que he realizado en este portfolio para que conozcas un poco mas de mi y asi poder ayudarte con cualquier proyecto que necesites. 
-          </p> <br> <hr>  <br>
+      <article> <!-- my description and projects-->
+         <div class="main-section-first">
+          <div class="my-description">
+            <h1 >Portafolio</h1>
+            <p>
+              <br> Bienvenido! Mi nombre es Edgar Cardona, soy Arquitecto de profesion y tambien me he formado como Desarrollador web. Siempre me ha gustado hacer proyectos en los cuales pueda incluir todas mis areas de conocimiento y he encontrado en el diseño y experiencia de usuario una pasion que quisera compartir contigo.
+              <br><br> A lo largo de mis años de estudio he aprendido que nunca es suficiente cualquier conocimiento adquirido y es por eso que me sigo capacitando para incorporar nuevas tecnologias y herramientas a mis trabajos. Es por eso que he decidido compartir todo lo que he realizado en este portfolio para que conozcas un poco mas de mi y asi poder ayudarte con cualquier proyecto que necesites. 
+             </p> 
+             <div class="action-btns">
+              <button class="hire-me">Hire Me</button>
+              <button class="portfolio">Portfolio</button>
+            </div>
+          </div>
+
+          <div class="profile-picture" >
+            <img src="/assets/images/profile-photo.png" alt="edgar-cardona-profile-picture">
+          </div>
+
+
+         
+         </div> 
+
+         <div class="project-title">
+          <h1>Proyectos</h1>
+         </div>
+
           <!-- project 1 -->
-          <h3>Arbol en consola</h3>
+          <div class="second-content">
+                <h3>Arbol en consola</h3>
 
-          <img src = "/assets/images/tree_py.png" alt ="Tree_in_python" >
+                <div  class="project-1-video">
+                  <video src="/assets/images/tree.py - Pag web - Visual Studio Code 2024-03-30 14-05-03.mp4" controls  width="500px" height="350px" title="Tree_in_python"></video>
+                </div>
+                
+                <div class="project-1-description">
+                    <p>Descripción: Aplicacion que inicialmente que permite al usuario ingresar la altura de un arbol grafico y posteriormente se puede visualizar la representacion del mismo con asteriscos, cada linea del arbol representa el numero escrito y su tronco está conformado por 2 asteriscos solamente si el valor ingresado es igual o mayor a 5.</p>
+                </div>  
+                <div class="project-1-tools">
+                    <p>Tecnologias y herramientas utilizadas:</p> 
+                    <div class="tools">
+                      <i class="fab fa-python"></i> Python 3.12.2 
+                      <i class="fas fa-code"></i> Visual Studio Code
+                    </div>
 
-          <p>
-            Descripción: Aplicacion que inicialmente que permite al usuario ingresar la altura de un arbol grafico y posteriormente se puede visualizar la representacion del mismo con asteriscos, cada linea del arbol representa el numero escrito y su tronco está conformado por 2 asteriscos solamente si el valor ingresado es igual o mayor a 5.
-          
-            Tecnologias y herramientas utilizadas: Para la realización de esta aplicacion se utilizó el lenguaje Python 3.11 y tambien, como editor de código fuente, la herramienta Visual studio code.
-          </p> <br> <hr> <br>
+                </div>
+        </div>
 
           <!-- project 2 -->
-          <h3>Pagina web de noticias</h3>
+        <div class="third-content">
+              <h3>Pagina web de noticias</h3>
 
-          <br> <img src = "/assets/images/news_project.png" alt ="News_page" > 
+              <div class="project-2-img">
+                <img class="project-2-img" src = "/assets/images/news_project.png" alt ="News_page" >
+              </div>
 
-          <p>
-          Descripción: Este es un proyecto de una pagina web en donde se pueden encontrar las ultimas noticias relacionadas con tecnologia, nuevas tendencias, el futuro de cada una de ellas, lo que le espera en este año, hacia donde apuntan las grandes empresas y como avanzan las que actualmente están en la cima del desarrollo e innovacion.
-          </p>
+              <div class="project-2-description">
+                <p>
+              Descripción: Este es un proyecto de una pagina web en donde se pueden encontrar las ultimas noticias relacionadas con tecnologia, nuevas tendencias, el futuro de cada una de ellas, lo que le espera en este año, hacia donde apuntan las grandes empresas y como avanzan las que actualmente están en la cima del desarrollo e innovacion.
+                </p>
+              </div>
 
-          <p>Tecnologias y herramientas utilizadas: Para la realización de esta pagina web se utilizó el lenguaje de marcado HTML y tambien, como editor de código fuente, la herramienta Visual studio code.
-          </p> <br> <hr>  <br>
+              <div class="project-2-tools">
+              <p>Tecnologias y herramientas utilizadas: Para la realización de esta pagina web se utilizó el lenguaje de marcado HTML y tambien, como editor de código fuente, la herramienta Visual studio code.
+              </p> 
+              </div>
+        </div>
+        <!-- project 3 -->
+        <div class="project-3">
+            <h3>Blog web</h3> 
 
-          <!-- project 3 -->
-          <h3>Blog web</h3> 
+            <img class= "project-3-img" src = "/assets/images/blog_project.png" alt ="Blog_web" > 
 
-          <img src = "/assets/images/blog_project.png" alt ="Blog_web" > 
+            <div class="project-3-description">
+              <p>Descripción: Este  proyecto es una pagina web en donde se puede encontrar un blog de tecnologia en el cual se enseña la vida , trabajos y curiosidades sobre las mas grandes mentes que dejaron su legado y aportaron las bases de los sistemas, lenguajes y modelos que hoy en dia conocemos.
+              </p>
+            </div> 
 
-          
-          <p>Descripción: Este  proyecto es una pagina web en donde se puede encontrar un blog de tecnologia en el cual se enseña la vida , trabajos y curiosidades sobre las mas grandes mentes que dejaron su legado y aportaron las bases de los sistemas, lenguajes y modelos que hoy en dia conocemos.
-          </p>
-
-          <p>Tecnologias y herramientas utilizadas: Para la realización de esta pagina web se utilizó el lenguaje de marcado HTML y tambien, como editor de código fuente, la herramienta Visual studio code.  
-          </p> <br> <hr>  <br>
-
-        </article>
+            <div class="project-3-tools">
+            <p >Tecnologias y herramientas utilizadas: Para la realización de esta pagina web se utilizó el lenguaje de marcado HTML y tambien, como editor de código fuente, la herramienta Visual studio code.  
+            </p>
+            </div>
+        </div> 
+      </article>
               
         <aside> <!-- float button  -->
           <div class = "container-boton"> 

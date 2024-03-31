@@ -13,6 +13,10 @@
         --whiteColor: #ffffff;
         --blackColor: #000000;
         --brownColor: #5d5c49;
+        --primary-color: #8921eb;
+        --primary-color-dark: #a573d4;
+        --prim: #cae5f0;
+        
         
       
         /* utilities */
@@ -73,7 +77,7 @@
       
 
 
-/* Estilos base para todos los elementos de la pag */
+/* Base style for all elements in page. */
 *{
         box-sizing: border-box; /* Todos los elementos usan el modelo de caja de borde */
         margin: 0; /* Margen de 0 para todos los elementos */
@@ -81,6 +85,158 @@
         font-family: 'Nunito', sans-serif; /* Fuente para todos los elementos */
         font-size: 16px; /* Tamaño de fuente base  */
 }
+
+.main{
+        background-image: repeating-radial-gradient(circle at center center, rgb(200,240,238) 0px, rgb(200,240,238) 2px,rgb(255,255,255) 2px, rgb(255,255,255) 3px); background-size: 69px 69px;}
+
+/* description-styles */
+.main-section-first{
+        background: var(--prim);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 80vh;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        gap: 15px;
+}
+.my-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+        margin-left: 20px;
+}
+
+.my-description >p{
+        font-size: 20px;
+
+}
+
+.profile-picture{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+}
+
+
+.profile-picture >img{
+        border-radius: 10px;
+        width: 380px;
+        height: 520px;
+}
+
+/* buttoms styles */
+.action-btns {
+        margin-top: 60px;
+        display: flex;
+        gap: 1rem;
+}
+
+.action-btns button {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 1rem 2rem;
+        outline: none;
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      
+ .hire-me {
+        background-color: var(--primary-color);
+        color: #ffffff;
+      }
+      
+.hire-me:hover {
+        background-color: var(--primary-color-dark);
+      }
+      
+.portfolio {
+        color: var(--primary-color);
+      }
+      
+.portfolio:hover {
+        background-color: var(--primary-color-dark);
+        color: #ffffff;
+      }
+      
+
+/* project styles */
+
+.second-content{
+    background:var(--prim);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    height: 80vh;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.project-title{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+}
+
+.second-content >h3{
+        margin-top: 15px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+}
+
+
+.project-1-video{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+}
+
+.project-1-video >video{
+        border-radius: 10px;
+}
+
+.second-content .project-1-description{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0px 15px;
+        padding: 0px 15px;
+}
+
+.second-content .project-1-tools{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+}
+
+.second-content .project-1-tools .tools{
+        margin-left: 20px;
+}
+
+.project-2{
+        background-color: #5d5c49;
+}
+
+.project-3{
+        background-color: aqua;
+}
+
 
 /* Header-styles */
 header{
@@ -140,22 +296,22 @@ header{
 
         /*Contact button styles */
         .contact-btn{
-        font-weight: 700; 
-        color: white; 
-        padding: 15px 25px; /* Relleno alrededor del botón - 9px arriba y abajo , 25 px a los lados */
-        background: #410099; 
-        border: none; /* Elimina el borde del botón */
-        border-radius: 50px; 
-        cursor: pointer; 
-        transition: all 0.3s; 
-        text-decoration: none;
-        }
-        
-        .contact-btn:hover{
-        background-color:#410099 ; 
-        color :white; 
-        transform: scale(1.1) ;
-        }   
+                font-weight: 700; 
+                color: white; 
+                padding: 15px 25px; /* Relleno alrededor del botón - 9px arriba y abajo , 25 px a los lados */
+                background:var(--secondColor); 
+                border: none; /* Elimina el borde del botón */
+                border-radius: 50px; 
+                cursor: pointer; 
+                transition: all 0.3s ease; 
+                text-decoration: none;
+                }
+                
+                .contact-btn:hover{
+                background-color:var(--primary-color) ; 
+                color :white; 
+                transform: scale(1.1) ;
+                }    
 
         .hamburger{
             display: none;
@@ -163,7 +319,7 @@ header{
 }
 
 
-
+ 
 /* Estilos para el botón flotante dentro del contenedor */
 .btn-float a {
         color:var(--secondColor); 
